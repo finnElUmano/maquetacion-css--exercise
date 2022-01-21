@@ -1,0 +1,39 @@
+//variables
+$grupo1-claro: #fff;
+$grupo1-primario: #47cfac;
+$grupo1-secundario: chocolate;
+$grupo1-suplente:#d63031;
+$color-claro: #e8eddf;
+$color-fondo1: #f5cb5c;
+$color-fondo: #333533;
+$color-fondo2: #242423;
+$gradiente: linear-gradient(to left, $grupo1-primario 0%, $grupo1-claro 90%);
+    
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline;
+  color: #000;
+}
+
+hr {
+  width: 98%;
+  color: $grupo1-primario;
+  margin: 0 auto;
+}
