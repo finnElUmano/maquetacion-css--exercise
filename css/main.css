@@ -5,24 +5,10 @@
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-}
-
-a {
-  text-decoration: none;
-  display: inline;
-  color: #000;
 }
 
 hr {
@@ -92,63 +78,56 @@ header nav .profile-link a p {
   font-weight: 800;
 }
 
-main {
-  display: table-cell;
-  width: 100%;
-  height: 100%;
-}
-main picture {
+.home-main {
   display: -ms-grid;
   display: grid;
-  position: relative;
-  width: 100%;
+  -ms-grid-columns: 1fr 4fr 1fr;
+  grid-template-columns: 1fr 4fr 1fr;
   height: 100%;
-  margin-top: 5px;
-  padding: 8px;
 }
-main picture img {
-  margin: 0;
+.home-main img {
+  position: absolute;
+  top: 85px;
   width: 100%;
   height: 100%;
-  background-size: cover;
-  background-attachment: fixed;
   background-position: center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  position: absolute;
+  background-size: cover;
+  z-index: -1;
 }
-main picture h1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 10px 25px;
-  font-family: "Roboto Slab", sans-serif;
-  font-size: 1.8rem;
+.home-main section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  justify-items: center;
+  height: 350px;
+  margin-top: 80px;
+}
+.home-main section .home-main-text {
+  font-size: 30px;
+  font-weight: 700px;
+  letter-spacing: 10px;
   text-align: center;
+  color: #e8eddf;
   text-transform: uppercase;
-  color: #fff;
-  z-index: 1;
-  position: absolute;
-  top: 75px;
 }
-main picture .boton {
-  display: inline-block;
-  width: 100px;
-  height: 35px;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  margin-bottom: 40px;
-  z-index: 1;
-  border: none;
+.home-main section .home-main-button {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 110px;
+  height: 50px;
   background-color: #47cfac;
+  color: #242423;
+  text-align: center;
 }
-main picture .boton a {
-  text-transform: uppercase;
-  font-size: 0.6rem;
-  color: #fff;
-  font-family: "Roboto Slabs", sans-serif;
-  font-weight: 800;
+.home-main section a {
+  font-weight: 700px;
+  font-size: 18px;
 }
 
 footer {

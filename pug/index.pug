@@ -1,11 +1,8 @@
 extend componentes/plantilla.pug
 block contenido
   hr
-  main
-    picture
-      //-
-        source(media="(min-width:1000px)", srcset="../css/fondo/grande-1.jpg")
-        source(media="(min-width:500px)", srcset="../css/fondo/medium-1.jpg")
-      <img src="../css/img-acets/cover-2.jpg", alt="fondo imagen"/>
-       h1  Conose las novedades y noticias del mundo tech.
-       button.boton: a(href="/") Entra ahora!
+  main.home-main
+    section
+      img(src="../css/img-acets/web.jpg", alt="Es una moto de fondo")
+      h1.home-main-text= text_main
+      a.home-main-button(href="../html/blogs.html") Entra ya!

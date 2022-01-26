@@ -17,19 +17,10 @@ $gradiente: linear-gradient(to left, $grupo1-primario 0%, $grupo1-claro 90%);
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-}
-
-a {
-  text-decoration: none;
-  display: inline;
-  color: #000;
 }
 
 hr {

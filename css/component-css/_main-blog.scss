@@ -1,57 +1,44 @@
-main {
-  display: table-cell;
-  width: 100%;
+.home-main {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
   height: 100%;
-  picture {
-    display: grid;
-    position: relative;
+  img {
+    position: absolute;
+    top: 85px;
     width: 100%;
     height: 100%;
-    margin-top: 5px;
-    padding: 8px;
-    img {
-      margin: 0;
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      position: absolute;
-    }
-    h1 {
-      display: flex;
-      margin: 10px 25px; 
-      font-family: 'Roboto Slab', sans-serif;
-      font-size: 1.8rem;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+  section {
+    display: grid;
+    grid-column: 2;
+    justify-items: center;
+    height: 350px;
+    margin-top: 80px;
+    .home-main-text {
+      font-size: 30px;
+      font-weight: 700px;
+      letter-spacing: 10px;
       text-align: center;
+      color: $color-claro;
       text-transform: uppercase;
-      color: $grupo1-claro;
-      z-index: 1;
-      position: absolute;
-      top: 75px;
     }
-  
-    .boton {
-      display: inline-block;
-      width: 100px;
-      height: 35px;
-      //positioin
-      justify-self: center;
-      align-self: flex-end;
-      margin-bottom: 40px;
-      z-index: 1;
-      //
-      border: none;
+    .home-main-button {
+      display: grid;
+      align-items: center;
+      width: 110px;
+      height: 50px;
       background-color: $grupo1-primario;
-      a {
-        text-transform: uppercase;
-        font-size: .6rem;
-        color: $grupo1-claro;
-        font-family: 'Roboto Slabs', sans-serif;
-        font-weight: 800;
-      }
+      color: $color-fondo2;
+      text-align: center;
+    }
+    a {
+      font-weight: 700px;
+      font-size: 18px;
     }
   }
-
 }
