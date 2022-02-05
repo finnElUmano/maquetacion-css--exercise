@@ -117,9 +117,9 @@ main picture img {
   position: absolute;
 }
 main picture h1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
+  -ms-grid-column-align: center;
+      justify-self: center;
   margin: 10px 25px;
   font-family: "Roboto Slab", sans-serif;
   font-size: 1.8rem;
@@ -132,8 +132,8 @@ main picture h1 {
 }
 main picture .boton {
   display: inline-block;
-  width: 100px;
-  height: 35px;
+  width: 150px;
+  height: 50px;
   -ms-grid-column-align: center;
       justify-self: center;
   -ms-flex-item-align: end;
@@ -145,7 +145,7 @@ main picture .boton {
 }
 main picture .boton a {
   text-transform: uppercase;
-  font-size: 0.6rem;
+  font-size: 0.9rem;
   color: #fff;
   font-family: "Roboto Slabs", sans-serif;
   font-weight: 800;

@@ -20,7 +20,8 @@ main {
       position: absolute;
     }
     h1 {
-      display: flex;
+      display: inline-block;
+      justify-self: center;
       margin: 10px 25px; 
       font-family: 'Roboto Slab', sans-serif;
       font-size: 1.8rem;
@@ -34,8 +35,8 @@ main {
   
     .boton {
       display: inline-block;
-      width: 100px;
-      height: 35px;
+      width: 150px;
+      height: 50px;
       //positioin
       justify-self: center;
       align-self: flex-end;
@@ -46,7 +47,7 @@ main {
       background-color: $grupo1-primario;
       a {
         text-transform: uppercase;
-        font-size: .6rem;
+        font-size: .9rem;
         color: $grupo1-claro;
         font-family: 'Roboto Slabs', sans-serif;
         font-weight: 800;
