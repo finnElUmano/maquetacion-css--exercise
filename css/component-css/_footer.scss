@@ -1,25 +1,25 @@
 footer {
   width: 100%;
-  height: 80px;
+  height: 100px;
   display: grid;
   grid-template-rows: 1fr;
   margin-top: 10px;
   .header-incons-container {
     width: 100%;
-    height: 50px;
+    height: auto;
     display: grid;
     background-color: $grupo1-primario;
     .icons {
-      width: 210px;
-      height: auto;
+      font-size: 40px;
       display: flex;
-      justify-items: flex-end;
-      align-items: center;
-      justify-content: space-between;
-      justify-self: end;
-      margin-right: 50px;
-      i {
-        color: $grupo1-claro;
+      justify-content: flex-end;
+      margin: auto 60px;
+      gap: 20px;
+      a {
+        margin-right: 10px;
+        i {
+          color: $grupo1-claro;
+        }
       }
     }
   }

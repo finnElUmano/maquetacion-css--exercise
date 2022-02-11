@@ -1,0 +1,12 @@
+extend componentes/plantilla.pug
+block contenido
+  hr
+  main.blogs
+    section.principal-blog
+      .img-content
+        h2 Noticias
+        img(src="../css/img-acets/principal-blogs.png", alt="es una conputadora")
+      .contenido
+        h2=title
+        p=content
+        a(href="/") Leer más!
