@@ -1,5 +1,5 @@
 //- vars
--var content = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptas repellendus quis similique beatae illum molestias nobis non cum, dolorem voluptates id fuga perferendis magnam omnis nostrum reiciendis eius? Ex.Ut minus tempore pariatur libero quidem qui a sed atque eius consectetur minima inventore hic totam."
+-var content = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptas repellendus quis similique beatae illum molestias nobis no omnis ? Ex.Ut minus."
 
 -var title = "Titulo del Blogspot"
 
@@ -7,8 +7,8 @@
 
 mixin boxes-s(imagen,titulo,contenido)
   .box-s
-    .box_img: img(src="../css/img-acest/+imagen")
-    .box_connten
+    .box_img: img(src="../css/img-acets/"+imagen)
+    .box_content
       h2=titulo
       p=contenido
-      a.button Leer más.
+      a(href="/") Leer más.

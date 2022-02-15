@@ -3,10 +3,24 @@ block contenido
   hr
   main.blogs
     section.principal-blog
-      .img-content
+      .principal-blog-img__content
         h2 Noticias
         img(src="../css/img-acets/principal-blogs.png", alt="es una conputadora")
-      .contenido
-        h2=title
-        p=content
-        a(href="/") Leer más!
+      .principal-blog-content__conteiner
+        .content__contenido
+          h2=title
+          p=content
+          a(href="/") Leer más!
+    //-
+    section.blogpost--container
+      h2 Ultimos blogpost
+      hr
+      .main-blogs
+        +boxes-s("post-1.png", title, content)
+        +boxes-s("post-2.png", title, content)
+        +boxes-s("post-3.png", title, content)
+        +boxes-s("post-1.png", title, content)
+        +boxes-s("post-2.png", title, content)
+        +boxes-s("post-3.png", title, content)
+    .foot
+      p Lorem ipsum dolor sit amet consectetur, adipisicing .fuga?
