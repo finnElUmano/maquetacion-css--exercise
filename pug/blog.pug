@@ -1,0 +1,19 @@
+extend componentes/plantilla.pug
+block contenido
+  main.blog-container
+    section.blog--img
+      img(src="../css/img-acets/principal-blogs.png", alt="es una computadora old")
+    section.blog--content
+      .blog__cabeza
+        h2 Noticias!
+        hr
+      .content__text
+        article
+          h2=title
+          p=content_l
+          p=content
+          p=content_l
+          p=content_l
+      .content__contact
+        +boxe-m("letter.png", "Contactame!")
+        +boxe-m("heart.png", "Escriveme!")

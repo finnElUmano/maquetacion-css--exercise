@@ -3,10 +3,10 @@ header {
   height: 80px;
   display: grid;
   grid-template-rows: 1fr 1fr;
+  margin-bottom: 10px;
   nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 90px;
     .nav-logo-container {
       margin-left: 30px;
       img {

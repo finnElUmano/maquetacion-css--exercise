@@ -1,5 +1,6 @@
 //- vars
 -var content = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptas repellendus quis similique beatae illum molestias nobis no omnis ? Ex.Ut minus."
+-var content_l = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore assumenda officia consectetur asperiores necessitatibus repellendus quia facilis? Explicabo commodi nihil, modi magni ea necessitatibus. At sapiente a rerum beatae nesciunt.Recusandae minima quasi tempore id, porro est, distinctio, ratione nostrum in cupiditate alias repellat dicta magni aliquid quisquam repellendus! Nemo natus commodi odit consectetur eveniet eaque necessitatibus animi dolor et!Voluptates id error assumenda praesentium molestias eos voluptas, amet quos natus quas blanditiis quis doloremque dicta cumque dolorem, animi aliquam in beatae numquam maiores? Ipsa quis debitis totam asperiores quidem.Consequatur, voluptatum? Quasi, hic. Ratione perferendis nobis, delectus ex, eos dolores, consequatur animi reiciendis culpa blanditiis unde distinctio. Minima similique architecto odit magni asperiores quis reprehenderit repudiandae libero necessitatibus nemo!"
 
 -var title = "Titulo del Blogspot"
 
@@ -11,4 +12,11 @@ mixin boxes-s(imagen,titulo,contenido)
     .box_content
       h2=titulo
       p=contenido
-      a(href="/") Leer más.
+      a(href="blog.html") Leer más.
+
+mixin boxe-m(a,b)
+  .box-m
+    img(src="../css/img-acets/"+a, alt="es una carta")
+    .text-area
+      a(href="/")=b 
+      p Lorem ipsum, adipisicing elit. Vitae, illo. Ullam eligendi expedita iste ducimus!

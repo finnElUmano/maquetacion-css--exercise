@@ -1,19 +1,23 @@
+.foot {
+  grid-column: 1/6;
+  background-color: $color-fondo2;
+  text-align: center;
+  padding: 10px 0;
+  color: $grupo1-claro;
+  border-top: 20px solid $grupo1-primario;
+}
 footer {
   width: 100%;
-  height: 100px;
+  height: 40px;
   display: grid;
   grid-template-rows: 1fr;
-  margin-top: 10px;
-  .header-incons-container {
-    width: 100%;
-    height: auto;
-    display: grid;
-    background-color: $grupo1-primario;
+  .header-incons-container { width: 100%; height: auto; display: grid; background-color: $grupo1-primario;
     .icons {
       font-size: 40px;
       display: flex;
       justify-content: flex-end;
-      margin: auto 60px;
+      margin-right: 60px;
+      margin-top: -23px;
       gap: 20px;
       a {
         margin-right: 10px;
@@ -23,5 +27,4 @@ footer {
       }
     }
   }
-
 }
