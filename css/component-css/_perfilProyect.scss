@@ -1,0 +1,40 @@
+.proyect__list-proyect {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  h1 {
+    display: flex;
+    justify-content: center;
+  }
+  .conteiner__proyects {
+    display: flex;
+    flex-direction: column;
+    .proyect__card {
+      display: flex;
+      flex-direction: row;
+      padding: 10px;
+      font-family: 'Roboto mono', monospace;
+      i {
+      display: grid;
+      font-size: 30px;
+      margin: 20px;
+      align-items: center;
+      color: $grupo1-primario;
+      }
+      .card__content {
+        h2 {
+          display: inline-block;
+          margin: 0 0 15px 0;
+          border-bottom: 1px solid $grupo1-primario;
+          letter-spacing: 2px;
+        }
+        a {
+          border: 1px solid $grupo1-primario;
+          padding: 0 9px;
+          margin: 15px;
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+}

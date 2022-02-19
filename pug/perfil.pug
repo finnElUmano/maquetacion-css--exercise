@@ -1,0 +1,25 @@
+extend componentes/plantilla.pug
+block contenido
+  main.profile--content
+    section.profile--content__presentacion
+      .presentacion__img
+        img(src="../css/img-acets/profile-pic.webp", alt="foto-personal-de-medio-cuperpo")
+      .presentacion__text
+        h1 Hello!
+        p=content_m
+    section.profile--content__proyect
+      .proyect__porcentaje
+        h1 Sikills!
+        .conteiner__cards
+          +barra-pro("80","Html")
+          +barra-pro("30","JS")
+          +barra-pro("60","GrphQl")
+      .proyect__list-proyect
+        h1 Proyects!
+        .conteiner__proyects
+          +proyect-card("Random-app")
+          +proyect-card("Random-app")
+          +proyect-card("Random-app")
+    section.profile--content__contact
+      +boxe-m("letter.png", "Contactame!")
+      +boxe-m("heart.png", "Escriveme!")

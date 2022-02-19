@@ -1,0 +1,34 @@
+.profile--content__contact {
+  display: grid;
+  grid-column: 1/4;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: minmax(130px, 1fr);  
+  min-height: 170px;
+  padding: 5px 15px;
+  gap: 10px;
+  align-items: flex-end;
+  .box-m {
+    display: inline-flex;
+    background-color: $color-fondo;
+    justify-content: center;
+    padding: 20px 15px;
+    font-family: 'Roboto mono', monospace;
+    max-height: 150px;
+    img {
+      display: grid;
+      width: 100px;
+      height: 100px;
+      align-self: center;
+    }
+    .text-area {
+      margin: auto;
+      margin-left: 20px;
+      a {
+        border-bottom: solid 1px $color-fondo2;
+      }
+      p {
+        margin-top: 10px;
+      }
+    }
+  }
+}

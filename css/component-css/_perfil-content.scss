@@ -1,0 +1,11 @@
+.profile--content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  height: 100vh;
+  overflow-y: scroll;
+  @import "_perfilPresentacion.scss";
+  @import "_perfilPorcentaje.scss";
+  @import "_perfilProyect.scss";
+  @import "_perfilContact.scss";
+}

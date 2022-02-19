@@ -1,0 +1,126 @@
+.profile--content__proyect {
+  display: grid;
+  grid-column: 1/4;
+  grid-template-columns: 1fr 1fr;
+  .proyect__porcentaje {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    grid-column: 1/2;
+    justify-items: center;
+    align-items: stretch;
+    height: 100%;
+    padding: 20px;
+    background: $grupo1-claro;
+    .conteiner__cards {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      width: 50%;
+      justify-content: center;
+      align-content: center;
+      .card:nth-child(1) svg circle:nth-child(2){
+        stroke-dashoffset: calc(440 - (440 * 80)/100);
+        stroke: $grupo1-primario;
+      }
+      .card:nth-child(2) svg circle:nth-child(2){
+        stroke-dashoffset: calc(440 - (440 * 30)/100);
+        stroke: $grupo1-primario;
+      }
+      .card:nth-child(3) svg circle:nth-child(2){
+        stroke-dashoffset: calc(440 - (440 * 60)/100);
+        stroke: $grupo1-primario;
+      }
+      .card {
+        position: relative;
+        width: 160px;
+        height: 160px;
+        background-color: rgba(0,0,0,0.5);
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        cursor: pointer;
+        text-align: center;
+        transition: 0.5s;
+        margin-top: 10px;
+        .box {
+          display: block;
+          border-radius: 50px;
+          width: 150px;
+          height: 150px;
+        }
+          &:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+          }
+          &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -50;
+            width: 100%;
+            height:100%;
+            background: white;
+            pointer-events: none;
+            z-index: 1;
+          }
+      }
+      .porcent{
+        position: relative;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        box-shadow: inset 0 0 50px #fff;
+        background: rgb(255,255,255);
+        z-index: 1;
+        .number {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content:center;
+          align-items: center;
+          flex-direction: column;
+          border-radius: 50%;
+          h2 {
+            display: inline-block;
+            color: #000;
+            font-weight: 700;
+            font-size: 20px;
+            transition: 0.5s;
+            span {
+              color: rgb(0,0,0);
+            }
+            &:hover {
+              color: rgb(0,0,0);
+              font-size: 33px;
+            }
+          }
+        }
+
+        svg {
+          position: relative;
+          width: 150px;
+          height: 150px;
+          transform: rotate(-85deg)!important;
+          circle {
+            width: 100%;
+            height: 100%;
+            fill: none;
+            stroke: $color-fondo;
+            stroke-width: 10;
+            stroke-linecap: round !important;
+            transform: translate(5px, 5px);
+            &:nth-child(2) {
+              //simulando el porcentaje
+              stroke-dasharray: 440;
+              stroke-dashoffset: 440;
+            }
+          }
+        }
+      }
+    }
+  }
+}
