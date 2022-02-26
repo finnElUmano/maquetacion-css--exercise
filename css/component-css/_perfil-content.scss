@@ -1,9 +1,18 @@
 .profile--content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 1fr;
-  height: 100vh;
-  overflow-y: scroll;
+  grid-auto-rows: auto;
+  //height: 100vh;
+  //overflow-y: scroll;
+  h1 {
+    display: grid;
+    font-family: 'Roboto mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border-bottom: 1px solid $grupo1-primario;
+    color: black;
+    position: sticky;
+  }
   @import "_perfilPresentacion.scss";
   @import "_perfilPorcentaje.scss";
   @import "_perfilProyect.scss";

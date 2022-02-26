@@ -3,19 +3,19 @@ block contenido
   main.profile--content
     section.profile--content__presentacion
       .presentacion__img
-        img(src="../css/img-acets/profile-pic.webp", alt="foto-personal-de-medio-cuperpo")
+        img(class="img__profile", src="../css/img-acets/profile-pic.webp", alt="foto-personal-de-medio-cuperpo")
       .presentacion__text
-        h1 Hello!
+        h1.presentacion__title Hello!
         p=content_m
     section.profile--content__proyect
       .proyect__porcentaje
-        h1 Sikills!
+        h1.porcentaje__title Sikills!
         .conteiner__cards
           +barra-pro("80","Html")
           +barra-pro("30","JS")
           +barra-pro("60","GrphQl")
       .proyect__list-proyect
-        h1 Proyects!
+        h1.proyect__title Proyects!
         .conteiner__proyects
           +proyect-card("Random-app")
           +proyect-card("Random-app")
