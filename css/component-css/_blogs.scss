@@ -3,7 +3,7 @@
   grid-template: repeat(3, 1fr) / repeat(5, 1fr);
   grid-template-rows: auto;
   padding: 15px;
-  overflow: scroll;
+  //overflow: scroll;
   .principal-blog {
     grid-column: 1 / 6; 
     display: flex;
@@ -55,3 +55,5 @@
   }
 }
 //blogs-post
+//- Section 2nd
+@import "_blogs-sectiion2nd";

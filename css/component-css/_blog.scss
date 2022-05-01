@@ -38,6 +38,7 @@
     .content__contact {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      gap: 10px;
       .box-m {
         display: inline-flex;
         background-color: $color-fondo;

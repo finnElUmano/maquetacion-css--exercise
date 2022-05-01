@@ -1,0 +1,13 @@
+@media (max-width: 390px) {
+  header nav .nav-logo-container a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  header nav .profile-link {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
