@@ -145,16 +145,31 @@ header nav .profile-link a p {
 .blogs {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[3];
-  -ms-grid-columns: (1fr)[5];
-      grid-template: repeat(3, 1fr)/repeat(5, 1fr);
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: auto;
   grid-template-rows: auto;
   padding: 15px;
 }
+
+.blogs > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.blogs > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+
+.blogs > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
 .blogs .principal-blog {
   -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
-  grid-column: 1/6;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -220,8 +235,8 @@ header nav .profile-link a p {
   height: 100%;
   margin: 0 auto;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
-  grid-column: 1/6;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
   font-family: "Roboto mono", monospace;
 }
 .blogpost--container h2 {
