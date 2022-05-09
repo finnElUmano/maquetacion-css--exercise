@@ -5,13 +5,11 @@
   //height: 100vh;
   //overflow-y: scroll;
   h1 {
-    display: grid;
     font-family: 'Roboto mono', monospace;
     text-transform: uppercase;
     letter-spacing: 4px;
     border-bottom: 1px solid $grupo1-primario;
     color: black;
-    position: sticky;
   }
   @import "_perfilPresentacion.scss";
   @import "_perfilPorcentaje.scss";

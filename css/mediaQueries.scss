@@ -10,73 +10,7 @@
     justify-content: center;
   }
 }
-//blogs
-@media (max-width:350px) {
-  .blogs {
-    grid-template-columns: 1fr;
-    padding: 0;
-    margin-bottom: 40px;
-  }
-
-  .blogs .principal-blog {
-    grid-column: 1/2;
-    flex-direction: column;
-    height: auto;
-  }
-
-  .blogs .principal-blog 
-  .principal-blog-img__content {
-    justify-content: center;
-    margin: auto auto;
-    width: 100%;
-  }
-  //titulo y textos
-  .blogs .principal-blog 
-  .principal-blog-content__conteiner {
-    width: 85%;
-    margin: 0 auto;
-  }
-  .blogs .principal-blog 
-  .principal-blog-content__conteiner
-  .content__contenido {
-    p {
-      font-size: 1rem;
-    }
-  }
-  //lista de post
-  .blogs .blogpost--container {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 90%;
-  }
-  .blogs 
-  .blogpost--container 
-  .main-blogs {
-    grid-template-columns: 1fr;
-  width: 90%;
-  }
-
-  .blogs
-  .blogpost--container 
-  .main-blogs 
-  .box-s {
-    margin: 0 auto;
-    width: 300px;
-  }
-
-  .blogs
-  .blogpost--container 
-  .main-blogs 
-  .box-s 
-  .box_img {
-    width: 280px;
-  }
-
-  .blogs
-  .blogpost--container 
-  .main-blogs 
-  .box-s 
-  .box_content {
-    padding: 5px;
-  }
-}
+//blogs //just-mobile
+@import "./media-queries/_mediaQueri_blogs.scss";
+//profile(about-me)
+@import "./media-queries/_mediaQueri_profile.scss";
